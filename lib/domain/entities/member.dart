@@ -1,11 +1,13 @@
 import 'package:equatable/equatable.dart';
 
+
 class Member extends Equatable {
   final String id;
   final String name;
   final String email;
   final String city;
   final DateTime joinDate;
+  final String membershipStatus; // 'Gold', 'Silver', 'Bronze'
 
   const Member({
     required this.id,
@@ -13,8 +15,10 @@ class Member extends Equatable {
     required this.email,
     required this.city,
     required this.joinDate,
+    required this.membershipStatus,
   });
 
   @override
-  List<Object?> get props => [id, name, email, city, joinDate];
+  List<Object?> get props => [id, name, email, city, joinDate, membershipStatus];
 }
+
