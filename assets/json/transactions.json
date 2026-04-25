@@ -1,0 +1,616 @@
+[
+  {
+    "id": "TXN-1030",
+    "date": "2026-04-25T10:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "supplements_immunity",
+          "name": "Bee Propolis Liquid",
+          "sku": "HDI-BPROP-LIQ",
+          "price": 450000,
+          "description": "Propolis cair.",
+          "package": "30 ml"
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "category": "skincare",
+          "name": "V3 Concentrate",
+          "sku": "HDI-V3",
+          "price": 320000,
+          "description": "Serum anti-aging.",
+          "package": "30ml"
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "category": "personal_care",
+          "name": "Body Wash",
+          "sku": "HDI-BODY-WASH",
+          "price": 115000,
+          "description": "Sabun mandi.",
+          "package": "250ml"
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "category": "natural_food",
+          "name": "Clover Honey 500g",
+          "sku": "HDI-HONEY-500",
+          "price": 165000,
+          "description": "Madu alami.",
+          "package": "500 gram"
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
+          "category": "kids",
+          "name": "Baby Oil",
+          "sku": "HDI-BABY-OIL",
+          "price": 85000,
+          "description": "Minyak pijat bayi.",
+          "package": "100ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 1135000
+  },
+  {
+    "id": "TXN-1029",
+    "date": "2026-04-20T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "skincare",
+          "name": "W4 Day Cream",
+          "sku": "HDI-W4",
+          "price": 270000,
+          "description": "Krim siang.",
+          "package": "30g"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 270000
+  },
+  {
+    "id": "TXN-1028",
+    "date": "2026-04-15T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "personal_care",
+          "name": "Body Creme",
+          "sku": "HDI-BODY-CREME",
+          "price": 130000,
+          "description": "Krim tubuh.",
+          "package": "200ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 130000
+  },
+  {
+    "id": "TXN-1027",
+    "date": "2026-04-10T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "natural_food",
+          "name": "Clover Honey 1kg",
+          "sku": "HDI-HONEY-1000",
+          "price": 300000,
+          "description": "Madu alami.",
+          "package": "1 kg"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 300000
+  },
+  {
+    "id": "TXN-1026",
+    "date": "2026-04-05T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "kids",
+          "name": "Hunny Bees",
+          "sku": "HDI-HUNNY",
+          "price": 75000,
+          "description": "Permen anak.",
+          "package": "20 pcs"
+        },
+        "quantity": 2
+      }
+    ],
+    "amount": 150000
+  },
+  {
+    "id": "TXN-1025",
+    "date": "2026-03-28T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "supplements_vitality",
+          "name": "Royal Jelly Tablets",
+          "sku": "HDI-RJ-TAB",
+          "price": 480000,
+          "description": "Royal jelly.",
+          "package": "60 tablet"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 480000
+  },
+  {
+    "id": "TXN-1024",
+    "date": "2026-03-22T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "skincare",
+          "name": "V1 Cleanser",
+          "sku": "HDI-V1",
+          "price": 220000,
+          "description": "Cleanser.",
+          "package": "100ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 220000
+  },
+  {
+    "id": "TXN-1023",
+    "date": "2026-03-15T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "personal_care",
+          "name": "Soothing Balm",
+          "sku": "HDI-BALM",
+          "price": 90000,
+          "description": "Balm.",
+          "package": "20g"
+        },
+        "quantity": 2
+      }
+    ],
+    "amount": 180000
+  },
+  {
+    "id": "TXN-1022",
+    "date": "2026-03-08T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "natural_food",
+          "name": "Proliz Lozenges Original",
+          "sku": "HDI-LOZ-ORI",
+          "price": 45000,
+          "description": "Permen tenggorokan.",
+          "package": "20 pcs"
+        },
+        "quantity": 3
+      }
+    ],
+    "amount": 135000
+  },
+  {
+    "id": "TXN-1021",
+    "date": "2026-03-01T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "kids",
+          "name": "Baby Cream",
+          "sku": "HDI-BABY-CREAM",
+          "price": 95000,
+          "description": "Krim bayi.",
+          "package": "50g"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 95000
+  },
+  {
+    "id": "TXN-1020",
+    "date": "2026-02-25T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "supplements_energy",
+          "name": "Pollenergy 520",
+          "sku": "HDI-POLL-520",
+          "price": 550000,
+          "description": "Bee pollen.",
+          "package": "100 kapsul"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 550000
+  },
+  {
+    "id": "TXN-1019",
+    "date": "2026-02-18T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "skincare",
+          "name": "V5 Night Cream",
+          "sku": "HDI-V5",
+          "price": 300000,
+          "description": "Krim malam.",
+          "package": "30g"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 300000
+  },
+  {
+    "id": "TXN-1018",
+    "date": "2026-02-12T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "personal_care",
+          "name": "Buzz Away Spray",
+          "sku": "HDI-SPRAY",
+          "price": 95000,
+          "description": "Spray anti nyamuk.",
+          "package": "100ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 95000
+  },
+  {
+    "id": "TXN-1017",
+    "date": "2026-02-05T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "natural_food",
+          "name": "Clover Honey 250g",
+          "sku": "HDI-HONEY-250",
+          "price": 95000,
+          "description": "Madu alami.",
+          "package": "250 gram"
+        },
+        "quantity": 2
+      }
+    ],
+    "amount": 190000
+  },
+  {
+    "id": "TXN-1016",
+    "date": "2026-01-28T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "kids",
+          "name": "Q Bees",
+          "sku": "HDI-QBEES",
+          "price": 140000,
+          "description": "Tumbuh kembang anak.",
+          "package": "60 tablet"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 140000
+  },
+  {
+    "id": "TXN-1015",
+    "date": "2026-01-20T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "supplements_joint",
+          "name": "Bone & Joint Health",
+          "sku": "HDI-BONE-JOINT",
+          "price": 470000,
+          "description": "Kesehatan sendi.",
+          "package": "60 kapsul"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 470000
+  },
+  {
+    "id": "TXN-1014",
+    "date": "2026-01-12T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "skincare",
+          "name": "W3 Serum",
+          "sku": "HDI-W3",
+          "price": 300000,
+          "description": "Serum brightening.",
+          "package": "30ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 300000
+  },
+  {
+    "id": "TXN-1013",
+    "date": "2026-01-05T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "personal_care",
+          "name": "Nourishing Shampoo",
+          "sku": "HDI-SHAMPOO",
+          "price": 120000,
+          "description": "Shampoo propolis.",
+          "package": "250ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 120000
+  },
+  {
+    "id": "TXN-1012",
+    "date": "2025-12-28T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "natural_food",
+          "name": "Proliz Lozenges Honey Lemon",
+          "sku": "HDI-LOZ-HL",
+          "price": 45000,
+          "description": "Permen tenggorokan.",
+          "package": "20 pcs"
+        },
+        "quantity": 2
+      }
+    ],
+    "amount": 90000
+  },
+  {
+    "id": "TXN-1011",
+    "date": "2025-12-20T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "kids",
+          "name": "Baby Oil",
+          "sku": "HDI-BABY-OIL",
+          "price": 85000,
+          "description": "Minyak pijat bayi.",
+          "package": "100ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 85000
+  },
+  {
+    "id": "TXN-1010",
+    "date": "2025-12-12T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "supplements_vitality",
+          "name": "Royal Jelly Liquid",
+          "sku": "HDI-RJ-LIQ",
+          "price": 620000,
+          "description": "Royal jelly cair.",
+          "package": "10 vial"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 620000
+  },
+  {
+    "id": "TXN-1009",
+    "date": "2025-12-05T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "skincare",
+          "name": "V2 Essence",
+          "sku": "HDI-V2",
+          "price": 260000,
+          "description": "Essence anti-aging.",
+          "package": "100ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 260000
+  },
+  {
+    "id": "TXN-1008",
+    "date": "2025-11-28T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "personal_care",
+          "name": "Overnight Mask",
+          "sku": "HDI-MASK",
+          "price": 180000,
+          "description": "Masker malam.",
+          "package": "50ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 180000
+  },
+  {
+    "id": "TXN-1007",
+    "date": "2025-11-20T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "natural_food",
+          "name": "Clover Honey 500g",
+          "sku": "HDI-HONEY-500",
+          "price": 165000,
+          "description": "Madu alami.",
+          "package": "500 gram"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 165000
+  },
+  {
+    "id": "TXN-1006",
+    "date": "2025-11-12T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "kids",
+          "name": "Hunny Bees",
+          "sku": "HDI-HUNNY",
+          "price": 75000,
+          "description": "Permen anak.",
+          "package": "20 pcs"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 75000
+  },
+  {
+    "id": "TXN-1005",
+    "date": "2025-11-05T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "supplements_immunity",
+          "name": "Bee Propolis Liquid",
+          "sku": "HDI-BPROP-LIQ",
+          "price": 450000,
+          "description": "Propolis cair.",
+          "package": "30 ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 450000
+  },
+  {
+    "id": "TXN-1004",
+    "date": "2025-10-28T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "skincare",
+          "name": "W4 Day Cream",
+          "sku": "HDI-W4",
+          "price": 270000,
+          "description": "Krim siang.",
+          "package": "30g"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 270000
+  },
+  {
+    "id": "TXN-1003",
+    "date": "2025-10-20T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "personal_care",
+          "name": "Body Wash",
+          "sku": "HDI-BODY-WASH",
+          "price": 115000,
+          "description": "Sabun mandi.",
+          "package": "250ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 115000
+  },
+  {
+    "id": "TXN-1002",
+    "date": "2025-10-12T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "natural_food",
+          "name": "Proliz Lozenges Original",
+          "sku": "HDI-LOZ-ORI",
+          "price": 45000,
+          "description": "Permen tenggorokan.",
+          "package": "20 pcs"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 45000
+  },
+  {
+    "id": "TXN-1001",
+    "date": "2025-10-05T00:00:00Z",
+    "status": "Completed",
+    "items": [
+      {
+        "product": {
+          "category": "kids",
+          "name": "Baby Oil",
+          "sku": "HDI-BABY-OIL",
+          "price": 85000,
+          "description": "Minyak pijat bayi.",
+          "package": "100ml"
+        },
+        "quantity": 1
+      }
+    ],
+    "amount": 85000
+  }
+]

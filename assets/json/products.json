@@ -1,0 +1,326 @@
+{
+  "brand": "HDI",
+  "currency": "IDR",
+  "products": [
+    {
+      "category": "supplements_immunity",
+      "name": "Propoelix 200mg 60 Vegecaps",
+      "sku": "HDI-PROP-60",
+      "price": 609950,
+      "description": "Ekstrak propolis untuk meningkatkan imun, antioksidan tinggi, antibakteri dan antiinflamasi.",
+      "package": "60 kapsul"
+    },
+    {
+      "category": "supplements_immunity",
+      "name": "Propoelix Plus",
+      "sku": "HDI-PROP-PLUS",
+      "price": 725000,
+      "description": "Propolis dengan kombinasi herbal tambahan untuk daya tahan tubuh optimal.",
+      "package": "60 kapsul"
+    },
+    {
+      "category": "supplements_immunity",
+      "name": "Bee Propolis Liquid",
+      "sku": "HDI-BPROP-LIQ",
+      "price": 450000,
+      "description": "Propolis cair untuk membantu menjaga daya tahan tubuh dan kesehatan mulut.",
+      "package": "30 ml"
+    },
+    {
+      "category": "supplements_energy",
+      "name": "Pollenergy 520",
+      "sku": "HDI-POLL-520",
+      "price": 550000,
+      "description": "Bee pollen untuk meningkatkan energi, stamina, dan vitalitas.",
+      "package": "100 kapsul"
+    },
+    {
+      "category": "supplements_vitality",
+      "name": "Royal Jelly Tablets",
+      "sku": "HDI-RJ-TAB",
+      "price": 480000,
+      "description": "Royal jelly untuk menjaga keseimbangan hormon dan vitalitas tubuh.",
+      "package": "60 tablet"
+    },
+    {
+      "category": "supplements_vitality",
+      "name": "Royal Jelly Liquid",
+      "sku": "HDI-RJ-LIQ",
+      "price": 620000,
+      "description": "Royal jelly cair untuk stamina dan regenerasi sel.",
+      "package": "10 vial"
+    },
+    {
+      "category": "supplements_vitality",
+      "name": "UltraX",
+      "sku": "HDI-ULTRAX",
+      "price": 530000,
+      "description": "Suplemen herbal untuk kesehatan pria dan vitalitas.",
+      "package": "60 kapsul"
+    },
+    {
+      "category": "supplements_vitality",
+      "name": "TrimeeX",
+      "sku": "HDI-TRIMEX",
+      "price": 520000,
+      "description": "Membantu metabolisme tubuh dan menjaga berat badan.",
+      "package": "60 kapsul"
+    },
+    {
+      "category": "supplements_joint",
+      "name": "Bone & Joint Health",
+      "sku": "HDI-BONE-JOINT",
+      "price": 470000,
+      "description": "Mendukung kesehatan tulang dan sendi.",
+      "package": "60 kapsul"
+    },
+    {
+      "category": "natural_food",
+      "name": "Clover Honey 250g",
+      "sku": "HDI-HONEY-250",
+      "price": 95000,
+      "description": "Madu alami sebagai pemanis sehat dan sumber energi.",
+      "package": "250 gram"
+    },
+    {
+      "category": "natural_food",
+      "name": "Clover Honey 500g",
+      "sku": "HDI-HONEY-500",
+      "price": 165000,
+      "description": "Madu alami untuk konsumsi harian.",
+      "package": "500 gram"
+    },
+    {
+      "category": "natural_food",
+      "name": "Clover Honey 1kg",
+      "sku": "HDI-HONEY-1000",
+      "price": 300000,
+      "description": "Madu alami ukuran keluarga.",
+      "package": "1 kg"
+    },
+    {
+      "category": "natural_food",
+      "name": "Proliz Lozenges Original",
+      "sku": "HDI-LOZ-ORI",
+      "price": 45000,
+      "description": "Permen pelega tenggorokan dengan madu dan propolis.",
+      "package": "20 pcs"
+    },
+    {
+      "category": "natural_food",
+      "name": "Proliz Lozenges Honey Lemon",
+      "sku": "HDI-LOZ-HL",
+      "price": 45000,
+      "description": "Permen tenggorokan rasa madu lemon.",
+      "package": "20 pcs"
+    },
+    {
+      "category": "personal_care",
+      "name": "Propolis Toothpaste",
+      "sku": "HDI-TOOTH",
+      "price": 75000,
+      "description": "Pasta gigi dengan propolis untuk menjaga kesehatan mulut.",
+      "package": "120g"
+    },
+    {
+      "category": "personal_care",
+      "name": "Mouthwash Propolis",
+      "sku": "HDI-MOUTH",
+      "price": 85000,
+      "description": "Obat kumur antibakteri alami.",
+      "package": "250ml"
+    },
+    {
+      "category": "personal_care",
+      "name": "Nourishing Shampoo",
+      "sku": "HDI-SHAMPOO",
+      "price": 120000,
+      "description": "Shampoo dengan propolis untuk rambut sehat.",
+      "package": "250ml"
+    },
+    {
+      "category": "personal_care",
+      "name": "Hair Serum",
+      "sku": "HDI-HAIR-SERUM",
+      "price": 150000,
+      "description": "Serum rambut untuk mengurangi kerontokan.",
+      "package": "100ml"
+    },
+    {
+      "category": "personal_care",
+      "name": "Face Wash",
+      "sku": "HDI-FACE-WASH",
+      "price": 110000,
+      "description": "Pembersih wajah berbasis propolis.",
+      "package": "100ml"
+    },
+    {
+      "category": "personal_care",
+      "name": "Overnight Mask",
+      "sku": "HDI-MASK",
+      "price": 180000,
+      "description": "Masker wajah untuk perawatan malam.",
+      "package": "50ml"
+    },
+    {
+      "category": "personal_care",
+      "name": "Body Creme",
+      "sku": "HDI-BODY-CREME",
+      "price": 130000,
+      "description": "Krim tubuh untuk melembapkan kulit.",
+      "package": "200ml"
+    },
+    {
+      "category": "personal_care",
+      "name": "Body Wash",
+      "sku": "HDI-BODY-WASH",
+      "price": 115000,
+      "description": "Sabun mandi dengan propolis.",
+      "package": "250ml"
+    },
+    {
+      "category": "personal_care",
+      "name": "Soothing Balm",
+      "sku": "HDI-BALM",
+      "price": 90000,
+      "description": "Balm untuk iritasi ringan dan gigitan serangga.",
+      "package": "20g"
+    },
+    {
+      "category": "personal_care",
+      "name": "Buzz Away Spray",
+      "sku": "HDI-SPRAY",
+      "price": 95000,
+      "description": "Spray anti nyamuk berbahan alami.",
+      "package": "100ml"
+    },
+    {
+      "category": "kids",
+      "name": "Gummy Bees",
+      "sku": "HDI-GUMMY",
+      "price": 85000,
+      "description": "Vitamin gummy untuk anak.",
+      "package": "60 gummies"
+    },
+    {
+      "category": "kids",
+      "name": "Honeybee PollenS",
+      "sku": "HDI-POLLEN-KIDS",
+      "price": 120000,
+      "description": "Bee pollen chewable untuk anak.",
+      "package": "60 tablet"
+    },
+    {
+      "category": "kids",
+      "name": "Q Bees",
+      "sku": "HDI-QBEES",
+      "price": 140000,
+      "description": "Mendukung tumbuh kembang anak.",
+      "package": "60 tablet"
+    },
+    {
+      "category": "kids",
+      "name": "Hunny Bees",
+      "sku": "HDI-HUNNY",
+      "price": 75000,
+      "description": "Permen kesehatan tenggorokan anak.",
+      "package": "20 pcs"
+    },
+    {
+      "category": "kids",
+      "name": "Baby Cream",
+      "sku": "HDI-BABY-CREAM",
+      "price": 95000,
+      "description": "Krim bayi untuk kulit sensitif.",
+      "package": "50g"
+    },
+    {
+      "category": "kids",
+      "name": "Baby Oil",
+      "sku": "HDI-BABY-OIL",
+      "price": 85000,
+      "description": "Minyak pijat bayi.",
+      "package": "100ml"
+    },
+    {
+      "category": "skincare",
+      "name": "W1 Cleanser",
+      "sku": "HDI-W1",
+      "price": 210000,
+      "description": "Cleanser untuk brightening.",
+      "package": "100ml"
+    },
+    {
+      "category": "skincare",
+      "name": "W2 Essence",
+      "sku": "HDI-W2",
+      "price": 250000,
+      "description": "Essence untuk mencerahkan kulit.",
+      "package": "100ml"
+    },
+    {
+      "category": "skincare",
+      "name": "W3 Serum",
+      "sku": "HDI-W3",
+      "price": 300000,
+      "description": "Serum brightening.",
+      "package": "30ml"
+    },
+    {
+      "category": "skincare",
+      "name": "W4 Day Cream",
+      "sku": "HDI-W4",
+      "price": 270000,
+      "description": "Krim siang.",
+      "package": "30g"
+    },
+    {
+      "category": "skincare",
+      "name": "W5 Night Cream",
+      "sku": "HDI-W5",
+      "price": 280000,
+      "description": "Krim malam.",
+      "package": "30g"
+    },
+    {
+      "category": "skincare",
+      "name": "V1 Cleanser",
+      "sku": "HDI-V1",
+      "price": 220000,
+      "description": "Cleanser anti-aging.",
+      "package": "100ml"
+    },
+    {
+      "category": "skincare",
+      "name": "V2 Essence",
+      "sku": "HDI-V2",
+      "price": 260000,
+      "description": "Essence anti-aging.",
+      "package": "100ml"
+    },
+    {
+      "category": "skincare",
+      "name": "V3 Concentrate",
+      "sku": "HDI-V3",
+      "price": 320000,
+      "description": "Serum anti-aging.",
+      "package": "30ml"
+    },
+    {
+      "category": "skincare",
+      "name": "V4 Day Cream",
+      "sku": "HDI-V4",
+      "price": 290000,
+      "description": "Krim siang anti-aging.",
+      "package": "30g"
+    },
+    {
+      "category": "skincare",
+      "name": "V5 Night Cream",
+      "sku": "HDI-V5",
+      "price": 300000,
+      "description": "Krim malam anti-aging.",
+      "package": "30g"
+    }
+  ]
+}
