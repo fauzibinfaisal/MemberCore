@@ -7,6 +7,7 @@ import 'package:member_core/presentation/blocs/auth/auth_bloc.dart';
 import 'package:member_core/presentation/blocs/auth/auth_event.dart';
 import 'package:member_core/presentation/blocs/auth/auth_state.dart';
 
+
 class MockLoginUseCase extends Mock implements LoginUseCase {}
 class MockLogoutUseCase extends Mock implements LogoutUseCase {}
 class MockCheckSessionUseCase extends Mock implements CheckSessionUseCase {}
@@ -73,6 +74,31 @@ void main() {
       expect: () => [
         const AuthLoading(),
         const AuthError(message: 'Invalid User ID/Email or password'),
+      ],
+    );
+
+    blocTest<AuthBloc, AuthState>(
+      'emits [AuthLoading, AuthAuthenticated] when CheckSession finds active session',
+      build: () {
+        when(() => checkSessionUseCase()).thenAnswer((_) async => true);
+        when(() => getCurrentMemberUseCase()).thenAnswer((_) async => mockMember);
+        return buildBloc();
+      },
+      act: (bloc) => bloc.add(const CheckSession()),
+      expect: () => [
+        AuthAuthenticated(member: mockMember),
+      ],
+    );
+
+    blocTest<AuthBloc, AuthState>(
+      'emits [AuthLoading, AuthUnauthenticated] when CheckSession finds no session',
+      build: () {
+        when(() => checkSessionUseCase()).thenAnswer((_) async => false);
+        return buildBloc();
+      },
+      act: (bloc) => bloc.add(const CheckSession()),
+      expect: () => [
+        const AuthUnauthenticated(),
       ],
     );
 
