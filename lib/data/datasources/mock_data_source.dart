@@ -1,4 +1,8 @@
+import 'dart:convert';
+import 'package:flutter/services.dart';
+
 import '../models/member_model.dart';
+import '../models/transaction_model.dart';
 
 /// Mock data source that simulates API responses.
 /// Replace this with a real API data source when backend is ready.
@@ -62,6 +66,24 @@ class MockDataSource {
       orElse: () => throw Exception('Member not found'),
     );
     return member;
+  }
+
+  List<TransactionModel>? _cachedTransactions;
+
+  Future<List<TransactionModel>> getTransactions(String memberId) async {
+    await Future.delayed(_delay);
+
+    if (_cachedTransactions == null) {
+      final jsonString = await rootBundle.loadString(
+          'assets/json/transactions.json');
+      final List<dynamic> jsonList = jsonDecode(jsonString);
+      _cachedTransactions = jsonList
+          .map((json) =>
+          TransactionModel.fromJson(json as Map<String, dynamic>))
+          .toList();
+    }
+
+    return List.from(_cachedTransactions!);
   }
 }
 
