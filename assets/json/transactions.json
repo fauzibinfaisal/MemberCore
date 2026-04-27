@@ -65,7 +65,7 @@
   {
     "id": "TXN-1029",
     "date": "2026-04-20T00:00:00Z",
-    "status": "Completed",
+    "status": "Pending",
     "items": [
       {
         "product": {
@@ -103,7 +103,7 @@
   {
     "id": "TXN-1027",
     "date": "2026-04-10T00:00:00Z",
-    "status": "Completed",
+    "status": "Pending",
     "items": [
       {
         "product": {
@@ -115,9 +115,20 @@
           "package": "1 kg"
         },
         "quantity": 1
+      },
+      {
+        "product": {
+          "category": "skincare",
+          "name": "W3 Serum",
+          "sku": "HDI-W3",
+          "price": 300000,
+          "description": "Serum brightening.",
+          "package": "30ml"
+        },
+        "quantity": 1
       }
     ],
-    "amount": 300000
+    "amount": 600000
   },
   {
     "id": "TXN-1026",
@@ -134,9 +145,20 @@
           "package": "20 pcs"
         },
         "quantity": 2
+      },
+      {
+        "product": {
+          "category": "skincare",
+          "name": "V3 Concentrate",
+          "sku": "HDI-V3",
+          "price": 320000,
+          "description": "Serum anti-aging.",
+          "package": "30ml"
+        },
+        "quantity": 1
       }
     ],
-    "amount": 150000
+    "amount": 470000
   },
   {
     "id": "TXN-1025",
@@ -229,9 +251,20 @@
           "package": "50g"
         },
         "quantity": 1
+      },
+      {
+        "product": {
+          "category": "kids",
+          "name": "Baby Oil",
+          "sku": "HDI-BABY-OIL",
+          "price": 85000,
+          "description": "Minyak pijat bayi.",
+          "package": "100ml"
+        },
+        "quantity": 1
       }
     ],
-    "amount": 95000
+    "amount": 180000
   },
   {
     "id": "TXN-1020",
@@ -350,7 +383,7 @@
   {
     "id": "TXN-1014",
     "date": "2026-01-12T00:00:00Z",
-    "status": "Completed",
+    "status": "Failed",
     "items": [
       {
         "product": {
@@ -368,22 +401,55 @@
   },
   {
     "id": "TXN-1013",
-    "date": "2026-01-05T00:00:00Z",
+    "date": "2026-01-22T00:00:00Z",
     "status": "Completed",
     "items": [
       {
         "product": {
+          "category": "natural_food",
+          "name": "Clover Honey 250g",
+          "sku": "HDI-HONEY-250",
+          "price": 95000,
+          "description": "Madu alami sebagai pemanis sehat dan sumber energi.",
+          "package": "250 gram"
+        },
+        "quantity": 1
+      },
+      {
+        "product": {
           "category": "personal_care",
-          "name": "Nourishing Shampoo",
-          "sku": "HDI-SHAMPOO",
-          "price": 120000,
-          "description": "Shampoo propolis.",
+          "name": "Body Wash",
+          "sku": "HDI-BODY-WASH",
+          "price": 115000,
+          "description": "Sabun mandi dengan propolis.",
           "package": "250ml"
         },
         "quantity": 1
+      },
+      {
+        "product": {
+          "category": "supplements_immunity",
+          "name": "Bee Propolis Liquid",
+          "sku": "HDI-BPROP-LIQ",
+          "price": 450000,
+          "description": "Propolis cair untuk membantu menjaga daya tahan tubuh dan kesehatan mulut.",
+          "package": "30 ml"
+        },
+        "quantity": 2
+      },
+      {
+        "product": {
+          "category": "personal_care",
+          "name": "Mouthwash Propolis",
+          "sku": "HDI-MOUTH",
+          "price": 85000,
+          "description": "Obat kumur antibakteri alami.",
+          "package": "250ml"
+        },
+        "quantity": 2
       }
     ],
-    "amount": 120000
+    "amount": 1280000
   },
   {
     "id": "TXN-1012",
@@ -464,7 +530,7 @@
   {
     "id": "TXN-1008",
     "date": "2025-11-28T00:00:00Z",
-    "status": "Completed",
+    "status": "Failed",
     "items": [
       {
         "product": {
@@ -479,25 +545,6 @@
       }
     ],
     "amount": 180000
-  },
-  {
-    "id": "TXN-1007",
-    "date": "2025-11-20T00:00:00Z",
-    "status": "Completed",
-    "items": [
-      {
-        "product": {
-          "category": "natural_food",
-          "name": "Clover Honey 500g",
-          "sku": "HDI-HONEY-500",
-          "price": 165000,
-          "description": "Madu alami.",
-          "package": "500 gram"
-        },
-        "quantity": 1
-      }
-    ],
-    "amount": 165000
   },
   {
     "id": "TXN-1006",
@@ -559,7 +606,7 @@
   {
     "id": "TXN-1003",
     "date": "2025-10-20T00:00:00Z",
-    "status": "Completed",
+    "status": "Failed",
     "items": [
       {
         "product": {

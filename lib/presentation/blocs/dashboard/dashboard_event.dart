@@ -24,3 +24,12 @@ class RefreshDashboard extends DashboardEvent {
   @override
   List<Object?> get props => [memberId];
 }
+class UpdateChartRange extends DashboardEvent {
+  final String startMonth;
+  final String endMonth;
+
+  const UpdateChartRange({required this.startMonth, required this.endMonth});
+
+  @override
+  List<Object?> get props => [startMonth, endMonth];
+}

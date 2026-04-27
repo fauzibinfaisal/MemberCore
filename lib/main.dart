@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:member_core/presentation/blocs/dashboard/dashboard_bloc.dart';
+import 'package:member_core/presentation/blocs/transaction/transaction_bloc.dart';
 import 'package:member_core/presentation/screens/dashboard_screen.dart';
 import 'package:member_core/presentation/screens/splash_screen.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -10,8 +11,10 @@ import 'core/theme/app_theme.dart';
 import 'data/datasources/mock_data_source.dart';
 import 'data/repositories/auth_repository_impl.dart';
 import 'data/repositories/member_repository_impl.dart';
+import 'data/repositories/transaction_repository_impl.dart';
 import 'domain/usecases/auth_usecases.dart';
 import 'domain/usecases/member_usecases.dart';
+import 'domain/usecases/transaction_usecases.dart';
 import 'presentation/blocs/auth/auth_bloc.dart';
 import 'presentation/blocs/auth/auth_event.dart';
 import 'presentation/blocs/auth/auth_state.dart';
@@ -40,6 +43,7 @@ class MemberDashboardApp extends StatelessWidget {
       prefs: prefs,
     );
     final memberRepo = MemberRepositoryImpl(dataSource: dataSource);
+    final transactionRepo = TransactionRepositoryImpl(dataSource: dataSource);
 
     return MultiBlocProvider(
       providers: [
@@ -56,6 +60,11 @@ class MemberDashboardApp extends StatelessWidget {
             getMemberProfileUseCase: GetMemberProfileUseCase(memberRepo),
             getDashboardSummaryUseCase:
             GetDashboardSummaryUseCase(memberRepo),
+          ),
+        ),
+        BlocProvider<TransactionBloc>(
+          create: (_) => TransactionBloc(
+            getTransactionsUseCase: GetTransactionsUseCase(transactionRepo),
           ),
         ),
         BlocProvider<ThemeBloc>(
