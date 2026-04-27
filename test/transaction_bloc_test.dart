@@ -57,7 +57,7 @@ void main() {
           allTransactions: [t1, t2],
           filteredTransactions: [t1, t2],
           availableMonths: const ['Apr 2026', 'Mar 2026'],
-          availableCategories: const ['SC', 'SP'], // skincare -> SC, supplements -> SP
+          availableCategories: const ['Skincare', 'Supplements'], // skincare -> Skincare, supplements -> Supplements
           availableStatuses: const ['Completed', 'Pending'],
         ),
       ],
@@ -86,7 +86,7 @@ void main() {
         allTransactions: [t1, t2],
         filteredTransactions: [t1, t2],
         availableMonths: const ['Apr 2026', 'Mar 2026'],
-        availableCategories: const ['SC', 'SP'],
+        availableCategories: const ['Skincare', 'Supplements'],
         availableStatuses: const ['Completed', 'Pending'],
       ),
       act: (bloc) => bloc.add(const FilterChanged(selectedStatus: 'Pending')),
@@ -95,7 +95,7 @@ void main() {
           allTransactions: [t1, t2],
           filteredTransactions: [t2],
           availableMonths: const ['Apr 2026', 'Mar 2026'],
-          availableCategories: const ['SC', 'SP'],
+          availableCategories: const ['Skincare', 'Supplements'],
           availableStatuses: const ['Completed', 'Pending'],
           selectedStatus: 'Pending',
         ),
@@ -112,7 +112,7 @@ void main() {
         allTransactions: [t1, t2],
         filteredTransactions: [t2],
         availableMonths: const ['Apr 2026', 'Mar 2026'],
-        availableCategories: const ['SC', 'SP'],
+        availableCategories: const ['Skincare', 'Supplements'],
         availableStatuses: const ['Completed', 'Pending'],
         selectedStatus: 'Pending',
       ),
@@ -122,7 +122,7 @@ void main() {
           allTransactions: [t1, t2],
           filteredTransactions: [t1, t2],
           availableMonths: const ['Apr 2026', 'Mar 2026'],
-          availableCategories: const ['SC', 'SP'],
+          availableCategories: const ['Skincare', 'Supplements'],
           availableStatuses: const ['Completed', 'Pending'],
         ),
       ],
@@ -156,11 +156,11 @@ void main() {
           allTransactions: [tMulti],
           filteredTransactions: [tMulti],
           availableMonths: const ['Apr 2026'],
-          availableCategories: const ['SC', 'SP'],
+          availableCategories: const ['Skincare', 'Supplements'],
           availableStatuses: const ['Completed'],
         );
       },
-      act: (bloc) => bloc.add(const FilterChanged(selectedCategory: 'SC')),
+      act: (bloc) => bloc.add(const FilterChanged(selectedCategory: 'Skincare')),
       expect: () => [
         isA<TransactionLoaded>().having((s) => s.filteredTransactions.length, 'length', 1)
             .having((s) => s.filteredTransactions.first.id, 'id', 'TX_MULTI'),

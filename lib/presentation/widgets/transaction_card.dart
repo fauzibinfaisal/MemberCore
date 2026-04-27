@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import '../../core/utils/category_utils.dart';
 import '../../core/utils/format_utils.dart';
 import '../../domain/entities/transaction.dart';
 
@@ -72,26 +73,27 @@ class TransactionCard extends StatelessWidget {
               spacing: 6.w,
               runSpacing: 6.h,
               children: transaction.categories.map((cat) {
+                final color = CategoryUtils.getColor(cat);
                 return Container(
                   padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
                   decoration: BoxDecoration(
-                    color: _categoryColor(cat).withValues(alpha: 0.1),
+                    color: color.withValues(alpha: 0.1),
                     borderRadius: BorderRadius.circular(6.r),
                     border: Border.all(
-                      color: _categoryColor(cat).withValues(alpha: 0.2),
+                      color: color.withValues(alpha: 0.2),
                     ),
                   ),
                   child: Row(
                     mainAxisSize: MainAxisSize.min,
                     children: [
-                      Icon(_categoryIcon(cat),
+                      Icon(CategoryUtils.getIcon(cat),
                           size: 12.sp,
-                          color: _categoryColor(cat)),
+                          color: color),
                       SizedBox(width: 4.w),
                       Text(
                         cat,
                         style: TextStyle(
-                          color: _categoryColor(cat),
+                          color: color,
                           fontSize: 10.sp,
                           fontWeight: FontWeight.bold,
                         ),
@@ -166,40 +168,6 @@ class TransactionCard extends StatelessWidget {
         ),
       ),
     );
-  }
-
-  IconData _categoryIcon(String category) {
-    switch (category) {
-      case 'SP': // Supplements
-        return Icons.healing_rounded;
-      case 'SC': // Skincare
-        return Icons.face_retouching_natural_rounded;
-      case 'PC': // Personal Care
-        return Icons.spa_rounded;
-      case 'NF': // Natural Food
-        return Icons.eco_rounded;
-      case 'KD': // Kids
-        return Icons.child_care_rounded;
-      default:
-        return Icons.shopping_bag_outlined;
-    }
-  }
-
-  Color _categoryColor(String category) {
-    switch (category) {
-      case 'SP':
-        return const Color(0xFFE17055); // Orange
-      case 'SC':
-        return const Color(0xFFFD79A8); // Pink
-      case 'PC':
-        return const Color(0xFF00CEC9); // Teal
-      case 'NF':
-        return const Color(0xFF00B894); // Green
-      case 'KD':
-        return const Color(0xFF0984E3); // Blue
-      default:
-        return const Color(0xFF636E72); // Gray
-    }
   }
 
   Color _statusColor(String status) {

@@ -6,6 +6,7 @@ import '../blocs/transaction/transaction_event.dart';
 import '../blocs/transaction/transaction_state.dart';
 import '../widgets/transaction_card.dart';
 import '../widgets/filter_chip_row.dart';
+import '../../core/utils/category_utils.dart';
 
 class TransactionScreen extends StatefulWidget {
   final String memberId;
@@ -153,7 +154,17 @@ class _TransactionScreenState extends State<TransactionScreen> {
                             if (state.selectedCategory != null) ...[
                               SizedBox(width: 8.w),
                               InputChip(
+                                avatar: Icon(
+                                  CategoryUtils.getIcon(state.selectedCategory!),
+                                  size: 14.sp,
+                                  color: CategoryUtils.getColor(state.selectedCategory!),
+                                ),
                                 label: Text(state.selectedCategory!),
+                                labelStyle: TextStyle(
+                                  color: CategoryUtils.getColor(state.selectedCategory!),
+                                  fontWeight: FontWeight.bold,
+                                  fontSize: 12.sp,
+                                ),
                                 onDeleted: () {
                                   context.read<TransactionBloc>().add(
                                     FilterChanged(
@@ -163,7 +174,11 @@ class _TransactionScreenState extends State<TransactionScreen> {
                                     ),
                                   );
                                 },
-                                deleteIconColor: theme.colorScheme.onSurface,
+                                deleteIconColor: CategoryUtils.getColor(state.selectedCategory!),
+                                backgroundColor: CategoryUtils.getColor(state.selectedCategory!).withValues(alpha: 0.1),
+                                side: BorderSide(
+                                  color: CategoryUtils.getColor(state.selectedCategory!).withValues(alpha: 0.2),
+                                ),
                               ),
                             ],
                           ],

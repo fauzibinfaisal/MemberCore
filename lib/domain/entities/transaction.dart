@@ -1,4 +1,3 @@
-
 import 'package:equatable/equatable.dart';
 import 'transaction_item.dart';
 
@@ -25,12 +24,12 @@ class Transaction extends Equatable {
   }
 
   String _mapCategory(String cat) {
-    if (cat.contains('supplements')) return 'SP';
-    if (cat.contains('skincare')) return 'SC';
-    if (cat.contains('personal_care')) return 'PC';
-    if (cat.contains('natural_food')) return 'NF';
-    if (cat.contains('kids')) return 'KD';
-    return 'OT';
+    if (cat.contains('supplements')) return 'Supplements';
+    if (cat.contains('skincare')) return 'Skincare';
+    if (cat.contains('personal_care')) return 'Personal Care';
+    if (cat.contains('natural_food')) return 'Natural Food';
+    if (cat.contains('kids')) return 'Kids';
+    return 'Others';
   }
 
   @override

@@ -9,7 +9,7 @@
 ## Features
 1. **Login Screen** — Email/password with session persistence
 2. **Dashboard** — Member profile + summary cards
-3. **Purchase History** — Transactions with live combined filters
+3. **Transaction History** — Transactions with live combined filters
 
 ---
 
@@ -47,7 +47,7 @@ flutter run --release
 
 ## 🧪 Testing
 
-The project includes a comprehensive suite of unit tests covering the entire logic stack.
+The project includes a comprehensive suite of unit tests covering the logic stack.
 
 ### Running All Tests
 ```bash
@@ -80,3 +80,7 @@ The app follows a **Clean Architecture** pattern to ensure maintainability and t
 ---
 
 ## ⚖️ Assumptions & Tradeoffs
+- **Mock Data Source**: Currently uses local JSON files and in-memory maps to simulate a backend. This is designed to be easily swapped with a `Dio` or `Http` client.
+- **Manual Dependency Injection**: Dependencies are injected manually in `main.dart` to keep the project lightweight. For larger scales, `get_it` and `injectable` are recommended.
+- **Simplified Navigation**: Uses standard Flutter Navigator. For complex deep-linking, `go_router` would be the next step.
+- **Hardcoded Product Categories**: Category abbreviations (SP, SC, etc.) are mapped in the UI layer; in a production app, these would ideally be served by the metadata API.

@@ -90,10 +90,10 @@ void main() {
     test('filter by category returns correct transactions', () {
       final result = applyFilters(
         testTransactions,
-        selectedCategory: 'NF', // natural_food
+        selectedCategory: 'Natural Food', // natural_food
       );
       expect(result.length, 2);
-      expect(result.every((t) => t.category == 'NF'), true);
+      expect(result.every((t) => t.category == 'Natural Food'), true);
     });
 
     test('combined filters (month + status) work together', () {
@@ -110,7 +110,7 @@ void main() {
       final result = applyFilters(
         testTransactions,
         selectedMonth: 'Mar 2026',
-        selectedCategory: 'SP', // supplements
+        selectedCategory: 'Supplements', // supplements
       );
       expect(result.length, 1);
       expect(result.first.items.first.product.name, 'Propoelix');
@@ -121,7 +121,7 @@ void main() {
         testTransactions,
         selectedMonth: 'Apr 2026',
         selectedStatus: 'Pending',
-        selectedCategory: 'PC', // personal_care
+        selectedCategory: 'Personal Care', // personal_care
       );
       expect(result.length, 1);
       expect(result.first.id, '2');
@@ -141,7 +141,7 @@ void main() {
         selectedStatus: 'Failed',
       );
       expect(result.length, 1);
-      expect(result.first.category, 'KD'); // kids
+      expect(result.first.category, 'Kids'); // kids
     });
   });
 

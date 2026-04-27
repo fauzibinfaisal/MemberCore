@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:member_core/core/constants/app_constants.dart';
 import '../blocs/auth/auth_bloc.dart';
 import '../blocs/auth/auth_event.dart';
 import '../blocs/auth/auth_state.dart';
@@ -134,7 +135,7 @@ class _LoginScreenState extends State<LoginScreen>
                         ),
                         SizedBox(height: 32.h),
                         Text(
-                          'Welcome Member!',
+                          AppConstants.appName,
                           style: theme.textTheme.headlineMedium?.copyWith(
                             fontWeight: FontWeight.w700,
                             letterSpacing: -0.5,
@@ -142,7 +143,7 @@ class _LoginScreenState extends State<LoginScreen>
                         ),
                         SizedBox(height: 8.h),
                         Text(
-                          'Sign in to your account',
+                          'Sign in to your member account',
                           style: theme.textTheme.bodyLarge?.copyWith(
                             color: theme.colorScheme.onSurface
                                 .withValues(alpha: 0.6),
