@@ -4,6 +4,16 @@
 
 ## 📱 Screenshots & Features
 
+### 🔐 Login Screen
+<img src="assets/screenshots/dark_login.png" width="220"/> <img src="assets/screenshots/light_login.png" width="220"/> 
+
+### 📊 Dashboard
+<img src="assets/screenshots/dark_dashboard01.png" width="220"/> <img src="assets/screenshots/dark_dashboard02.png" width="220"/> <img src="assets/screenshots/light_dashboard.png" width="220"/>
+
+### 🧾 Transaction History
+<img src="assets/screenshots/dark_trx.png" width="220"/> <img src="assets/screenshots/light_trx.png" width="220"/>
+
+
 ---
 
 ## Features
