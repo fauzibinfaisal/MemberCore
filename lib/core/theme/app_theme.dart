@@ -1,13 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:member_core/core/constants/app_colors.dart';
 
 class AppTheme {
   AppTheme._();
 
-  // ── HDI Color Palette ──
-  static const Color _primarySeed = Color(0xFFFF353F); // Coral Red
-  static const Color _secondarySeed = Color(0xFF6BBF59); // Natural Green
-  static const Color _accent = Color(0xFFF5B800); // Honey Gold
+  // ── Light Theme Colors ──
+  static const Color _primarySeed = AppColors.primarySeedLight;
+  static const Color _secondarySeed = AppColors.secondarySeedLight;
+  static const Color _accent = AppColors.accentLight;
+  static const Color _border = AppColors.borderLight;
+
+  // ── Dark Theme Colors ──
+  static const Color _primarySeedDark = AppColors.primarySeedDark;
+  static const Color _secondarySeedDark = AppColors.secondarySeedDark;
+  static const Color _accentDark = AppColors.accentDark;
+  static const Color _borderDark = AppColors.borderDark;
 
   // ── Light Theme ──
   static ThemeData get lightTheme {
@@ -86,7 +94,7 @@ class AppTheme {
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.r),
-          borderSide: BorderSide(color: Colors.red, width: 1.5.w),
+          borderSide: BorderSide(color: _border, width: 1.5.w),
         ),
         hintStyle: TextStyle(color: Colors.grey.shade400, fontSize: 14.sp),
       ),
@@ -112,8 +120,8 @@ class AppTheme {
   // ── Dark Theme ──
   static ThemeData get darkTheme {
     final colorScheme = ColorScheme.fromSeed(
-      seedColor: const Color(0xFFFF4D57), // brighter coral for dark
-      secondary: const Color(0xFF7ED957),
+      seedColor: _primarySeedDark, // brighter coral for dark
+      secondary: _secondarySeedDark,
       brightness: Brightness.dark,
       surface: const Color(0xFF1E293B),
     );
@@ -183,7 +191,7 @@ class AppTheme {
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.r),
           borderSide:
-          BorderSide(color: const Color(0xFFFF4D57), width: 2.w),
+          BorderSide(color: _borderDark, width: 2.w),
         ),
         errorBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(14.r),
@@ -198,13 +206,13 @@ class AppTheme {
           borderRadius: BorderRadius.circular(10.r),
         ),
         padding: EdgeInsets.symmetric(horizontal: 8.w, vertical: 4.h),
-        backgroundColor: const Color(0xFFF5B800).withValues(alpha: 0.2),
+        backgroundColor: _accentDark.withValues(alpha: 0.2),
         selectedColor: const Color(0xFFFFC93C),
       ),
 
       // Divider
       dividerTheme: DividerThemeData(
-        color: Colors.grey.shade800,
+        color: AppColors.divider,
         thickness: 1.h,
       ),
     );

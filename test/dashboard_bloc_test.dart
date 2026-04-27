@@ -1,5 +1,6 @@
 import 'package:bloc_test/bloc_test.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:member_core/domain/entities/monthly_trend.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:member_core/domain/entities/member.dart';
 import 'package:member_core/domain/entities/dashboard_summary.dart';
@@ -24,9 +25,15 @@ void main() {
     membershipStatus: 'Gold',
   );
 
+  final mockTrend = [
+    const MonthlyTrend(month: 'Jan 2026', count: 5),
+    const MonthlyTrend(month: 'Feb 2026', count: 3),
+  ];
+
   final mockSummary = DashboardSummary(
     totalPurchaseThisMonth: 1250.0,
     totalTransactions: 15,
+    monthlyTrend: mockTrend,
   );
 
   setUp(() {
@@ -57,6 +64,9 @@ void main() {
         DashboardLoaded(
           member: mockMember,
           summary: mockSummary,
+          startMonth: 'Jan 2026',
+          endMonth: 'Feb 2026',
+          filteredTrend: mockTrend,
         ),
       ],
     );
@@ -88,6 +98,9 @@ void main() {
         DashboardLoaded(
           member: mockMember,
           summary: mockSummary,
+          startMonth: 'Jan 2026',
+          endMonth: 'Feb 2026',
+          filteredTrend: mockTrend,
         ),
       ],
     );

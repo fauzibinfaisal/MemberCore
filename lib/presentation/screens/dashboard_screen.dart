@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:member_core/presentation/screens/settings_screen.dart';
 import '../../core/utils/format_utils.dart';
 import '../../domain/entities/member.dart';
 import '../blocs/auth/auth_bloc.dart';
@@ -11,6 +12,7 @@ import '../blocs/dashboard/dashboard_event.dart';
 import '../blocs/dashboard/dashboard_state.dart';
 import '../widgets/summary_card.dart';
 import '../widgets/member_header.dart';
+import '../widgets/transaction_chart.dart';
 import 'login_screen.dart';
 import 'transaction_screen.dart';
 
@@ -52,7 +54,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
             PopupMenuButton<String>(
               icon: Icon(Icons.more_vert_rounded),
               onSelected: (value) {
-                if (value == 'logout') {
+                if (value == 'settings') {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (_) => const SettingsScreen(),
+                    ),
+                  );
+                } else if (value == 'logout') {
                   _showLogoutDialog(context);
                 }
               },
@@ -201,7 +209,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
                               ),
                             ],
                           ),
-                          SizedBox(height: 36.h), // Extra space after chart
+                          SizedBox(height: 24.h),
+                          TransactionChart(
+                            trend: state.filteredTrend,
+                            startMonth: state.startMonth,
+                            endMonth: state.endMonth,
+                            availableMonths:
+                            state.summary.monthlyTrend.map((t) => t.month).toList(),
+                            onRangeChanged: (start, end) {
+                              context.read<DashboardBloc>().add(
+                                UpdateChartRange(startMonth: start, endMonth: end),
+                              );
+                            },
+                          ),
+                          SizedBox(height: 40.h), // Extra space after chart
                         ],
                       ),
                     ),
